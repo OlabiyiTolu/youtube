@@ -1,0 +1,152 @@
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+@media(max-width: 730px)
+{
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+  .video-title{
+    font-size: 20px;
+    line-height: 18px;
+  }
+}
+
+@media(max-width: 731px) and (min-width: 999px)
+{
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media(min-width: 1000px)
+{
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}  
+
+@media(min-width: 1000px)
+{
+  .video-title{
+    font-size: 40px;
+    line-height: 28px;
+  }
+}
+
+@media(min-width: 1000px)
+{
+  .video-author,
+  .video-stats{
+    font-size: 40px;
+  }
+}
+
+
+
+.thumbnail-row{
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.thumbnail{
+  width: 100%;
+}
+
+.video-time{
+  font-family: Roboto, Arial;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 10px;
+  right: 8px;
+  height: 20px;
+  width: 40px;
+  background-color: black;
+  color: white;
+}
+
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.channel-picture .profile-picture{
+  width: 80%;
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+}
+
+.channel-picture .tooltip {
+  display: flex;
+  position: absolute;
+  width: 250px;
+  align-items: center;
+  padding-left: 15px;
+  border-radius: 6px;
+  background-color: white; 
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.35);
+  transition: opacity 0.15s;
+  opacity: 0;
+  pointer-events: none;
+  }
+  
+.channel-picture:hover .tooltip{
+  opacity: 1;
+}
+
+
+
+.pp .profile-picture{
+  width: 50px;
+  display: inline-block;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.pp-details{
+  flex: 1fr;
+}
+
+.pp-details .video-author{
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.subscribers{
+  font-size: 20px;
+  font-weight: 500;
+  color: gray;
+}
+
+
+.video-title{
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 12px;
+}
+
+.video-author, .video-stats{
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+.video-author{
+  margin-bottom: 3px;
+}
+
+.video-title-link {
+  text-decoration: none;
+  color: black;
+}
